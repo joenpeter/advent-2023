@@ -8,9 +8,9 @@ package tech.droptable.advent.computer;
  */
 public class IntegerResult implements Result {
 
-  int result;
+  long result;
   
-  public IntegerResult(int result) {
+  public IntegerResult(long result) {
     this.result = result;
   }
   
