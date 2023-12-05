@@ -15,7 +15,7 @@ public class SumOfAllComputer implements Computer {
   public CompletableFuture<Result> result(Model model) {
     return CompletableFuture.supplyAsync(() -> {
       int total = 0;
-      for(String v: model.getAttributes().values()) {
+      for(String v: ((Iterable<String>)model.getAttributes().values())) {
         total = total + Integer.parseInt(v);
       }
       return new IntegerResult(total);

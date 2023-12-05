@@ -8,20 +8,20 @@ import java.util.Map;
 /**
  * 
  */
-public class BaseModel implements Model {
+public class BaseModel<A> implements Model {
   
-  Map<String,String> attributes;
+  Map<String,A> attributes;
   
   public BaseModel() {
     
   }
   
-  public BaseModel(Map<String,String> att) {
+  public BaseModel(Map<String,A> att) {
     attributes = att;
   }
 
   @Override
-  public Map<String, String> getAttributes() {
+  public Map<String, A> getAttributes() {
     return attributes;
   }
 

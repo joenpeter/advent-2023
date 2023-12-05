@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 
  */
-public interface Model {
+public interface Model<A> {
 
-  Map<String,String> getAttributes();
+  Map<String,A> getAttributes();
 }
