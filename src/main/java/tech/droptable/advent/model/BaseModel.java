@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 
  */
-public class BaseModel<A> implements Model {
+public class BaseModel<A> implements Model<A> {
   
   Map<String,A> attributes;
   

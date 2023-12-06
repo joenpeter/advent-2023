@@ -18,5 +18,14 @@ public abstract class AbstractProcessor implements Processor {
   }
   
   protected abstract Model internalProcess(Stream<String> input);
+  
+  protected String stripSpaces(String string) {
+    String[] ss = string.trim().split("\\s+");
+    String result = "";
+    for(String s: ss) {
+      result = result + s;
+    }
+    return result;
+  }
 
 }
